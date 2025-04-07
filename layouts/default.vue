@@ -65,7 +65,7 @@
             <ul class="list-unstyled mb-0">
               <li class="mb-2"><a href="/" class="text-decoration-none text-muted">Home</a></li>
               <li class="mb-2"><a href="/solar-installers" class="text-decoration-none text-muted">For Suppliers</a></li>
-              <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Get a Quote</a></li>
+              <li class="mb-2"><a href="get-quote" class="text-decoration-none text-muted">Get a Quote</a></li>
             </ul>
           </div>
           <div class="col-lg-3">

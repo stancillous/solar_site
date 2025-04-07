@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <!-- Form Column -->
-            <div class="col-lg-6 order-2 order-lg-1">
+            <div class="col-lg-6 order-lg-1">
                 <div class="pe-lg-4">
                     <h2 class="display-6 mt-2 mb-4 lh-sm fw-normal">Get Your Free Solar Quote</h2>
                     <p class="lead fs-6 mb-4">Fill out the form below and we'll get back to you with a customized solar solution for your home.</p>
@@ -92,7 +92,7 @@
             </div>
 
             <!-- Image Column -->
-            <div class="col-lg-6 order-1 order-lg-2">
+            <div class="col-lg-6  order-lg-2">
                 <div class="position-relative">
                     <img 
                         src="https://cdn-assets-us.frontify.com/s3/frontify-enterprise-files-us/eyJwYXRoIjoic3VucnVuXC9maWxlXC9QZEZFVWs3Z25IR2JxbTg2b2RFeC5qcGcifQ:sunrun:xtSwgw13r1fM9u0gJPUdGRAhAvQySdebjXG1PoU022E?width=1680&format=webp" 
