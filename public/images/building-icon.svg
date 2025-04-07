@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M60 0L90 30V105H75V45H45V105H30V30L60 0Z" fill="white" fill-opacity="0.9"/>
+  <path d="M0 120V60L15 45V120H0Z" fill="white" fill-opacity="0.9"/>
+  <path d="M105 45L120 60V120H105V45Z" fill="white" fill-opacity="0.9"/>
+  <rect x="52.5" y="60" width="15" height="15" fill="white" fill-opacity="0.9"/>
+  <rect x="52.5" y="82.5" width="15" height="15" fill="white" fill-opacity="0.9"/>
+  <rect x="52.5" y="105" width="15" height="15" fill="white" fill-opacity="0.9"/>
+</svg>

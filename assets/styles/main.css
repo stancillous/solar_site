@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root {
+  --maxWidth: 1200px;
+  --titleFontFamily: "DM Sans", sans-serif;
+  --primaryBg: #056608;
+  --grayBg: #abadae;
+  --footerBg: #e6f7fe;
+  --textPrimary: #004225;
+  --desktopMarginTop: 50px;
+  --pageBg:#f8f9fa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+
+.container {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input,
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 18px;
+}
+
+.title-element {
+  font-family: var(--titleFontFamily);
+}
+
+ul li,
+p,
+span,
+input,
+label,
+textarea,
+a,
+select,
+option, input::placeholder{
+  font-size: 14px;
+}
+
+.card-title {
+  font-size: 17px;
+  margin: 5px 0;
+}
+
+p {
+  opacity: 0.9;
+}
+button {
+  border: unset !important;
+  border-radius: 2px !important;
+}
+.btn-light {
+  background-color: white;
+  color: black;
+}
+
+.btn-primary,
+.bg-primary {
+  background-color: var(--primaryBg) !important;
+  color: white;
+}
+
+small {
+  font-size: 12px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+}
+.nav-link {
+  color: black;
+  font-size: 13px;
+  
+}
+.nav-link.active {
+  background-color: var(--primaryBg) !important;
+}
+
+.section-padding {
+  padding: 30px;
+  padding-top: 4rem;
+}
+
+.text-primary {
+  color: var(--textPrimary) !important;
+}
+
+
+.bg-light{
+  background-color: #00422538 !important;
+  background-color: #beecd838 !important;
+}
