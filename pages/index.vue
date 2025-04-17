@@ -470,19 +470,19 @@ const nextTestimonial = () => {
 const articles = [
   {
     title: 'What Size Solar System Do I Need for My Home?',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80'
+    image: 'https://www.nrdc.org/sites/default/files/styles/medium_16x9_100/public/2024-05/solar101_GettyImages-1225595093.jpg.webp?h=44e2402b&itok=gB5spH0L'
   },
   {
     title: 'What is the Best Solar Panel for My Roof?',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80'
+    image: 'https://www.nrdc.org/sites/default/files/styles/medium_100/public/2024-05/solar101_AP19226683410036.jpg.webp'
   },
   {
     title: '5 Things to Know Before Installing Solar Panels on Your Home',
-    image: 'https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80'
+    image: 'https://www.nrdc.org/sites/default/files/styles/medium_2x3_100/public/2024-05/solar101_GettyImages-1882736475.jpg.webp?h=32a026d6&itok=M_-fF72q'
   },
   {
     title: 'How Long Do Solar Panels Last? (+Maintenance Tips)',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80'
+    image: 'https://www.nrdc.org/sites/default/files/styles/medium_100/public/2024-05/solar101_AP24074717661046.jpg.webp?itok=bneyqLkN'
   }
 ];
 
