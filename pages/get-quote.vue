@@ -4,7 +4,7 @@
             <!-- Form Column -->
             <div class="col-lg-6 order-lg-1">
                 <div class="pe-lg-4">
-                    <h2 class="display-6 mt-2 mb-4 lh-sm fw-normal">Get Your Free Solar Quote</h2>
+                    <h2 class="mt-2 mb-4">Get Your Free Solar Quote</h2>
                     <p class="lead fs-6 mb-4">Fill out the form below and we'll get back to you with a customized solar solution for your home.</p>
 
                     <div class="bg-light p-4 rounded">

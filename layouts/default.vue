@@ -39,7 +39,9 @@
               <a class="mobile-nav-link" href="/solar-installers">For Suppliers</a>
             </li>
             <li class="mt-4">
-              <button class="btn btn-sm btn-primary px-4 w-100" href="#">Get a Free Estimate</button>
+              <a href="/get-quote">
+                <button class="btn btn-sm btn-primary px-4 w-100" href="#">Get a Free Estimate</button>
+              </a>
             </li>
           </ul>
         </div>
@@ -168,18 +170,22 @@ useHead({
 .mobile-nav-link {
   color: #333;
   text-decoration: none;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   transition: color 0.2s ease;
 }
 
 .mobile-nav-link:hover {
-  color: var(--bs-primary);
+  text-decoration: underline;
 }
 
 @media (min-width: 992px) {
   .mobile-nav,
   .mobile-nav-overlay {
     display: none;
+  }
+
+  .mobile-nav-link{
+    font-size: 14px !important;
   }
 }
 </style>

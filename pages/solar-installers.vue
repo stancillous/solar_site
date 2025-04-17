@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="pb-4" style="max-width: 600px">
 
-            <h2  class="display-6 mt-2 mb-4 lh-sm fw-normal">Join Our Network of Solar Installers</h2>
+            <h2  class="mt-2 mb-4">Join Our Network of Solar Installers</h2>
             <p class="lead fs-6 mb-4">Partner with us to grow your business and help more homes transition to clean energy.</p>
         </div>
         <div class="row g-4">
