@@ -67,7 +67,7 @@
               </div>
 
               <div class="col-12 text-center mt-4">
-                <button type="submit" class="btn btn-primary btn-lg px-5">Calculate Savings</button>
+                <button type="submit" class="btn btn-primary btn-sm px-5">Calculate Savings</button>
               </div>
             </form>
 
