@@ -15,6 +15,9 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
+              <a class="mobile-nav-link" href="/solar-calculator">Solar Calculator</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="/solar-installers">For Suppliers</a>
             </li>
             <li class="nav-item ms-3">
@@ -34,6 +37,9 @@
           <ul class="list-unstyled p-3">
             <li class="mb-3">
               <a class="mobile-nav-link" href="/">Home</a>
+            </li>
+            <li class="mb-3">
+              <a class="mobile-nav-link" href="/solar-calculator">Solar Calculator</a>
             </li>
             <li class="mb-3">
               <a class="mobile-nav-link" href="/solar-installers">For Suppliers</a>
@@ -66,6 +72,7 @@
             <h6 class="fw-bold mb-3">Quick Links</h6>
             <ul class="list-unstyled mb-0">
               <li class="mb-2"><a href="/" class="text-decoration-none text-muted">Home</a></li>
+              <li class="mb-2"><a href="/solar-calculator" class="text-decoration-none text-muted">Solar Calculator</a></li>
               <li class="mb-2"><a href="/solar-installers" class="text-decoration-none text-muted">For Suppliers</a></li>
               <li class="mb-2"><a href="get-quote" class="text-decoration-none text-muted">Get a Quote</a></li>
             </ul>
