@@ -4,7 +4,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="text-center mb-5">
-            <h2 class="mb-2">Solar Savings Calculator</h2>
+            <h2 class="mb-2">Solar savings calculator</h2>
             <p class="text-muted">Estimate your potential solar savings and system size based on your specific needs</p>
           </div>
 
