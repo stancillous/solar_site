@@ -40,7 +40,7 @@ const article = ref({});
 
 const getArticle = async() => {
     try {
-        const response = await axiosInstance.get(`http://localhost:8000/solar-ireland/api/blogs/${slug.value}`);
+        const response = await axiosInstance.get(`/blogs/${slug.value}`);
         article.value = response.data;
     } catch (error) {
         console.error('Error fetching article:', error);
@@ -50,7 +50,7 @@ const getArticle = async() => {
 // get the other articles
 const getOtherArticles = async() => {
     try {
-        const response = await axiosInstance.get('http://localhost:8000/solar-ireland/api/blogs');
+        const response = await axiosInstance.get('/blogs');
         otherArticles.value = response.data;
     } catch (error) {
         console.error('Error fetching other articles:', error);

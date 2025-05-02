@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL: "http://localhost:8000/solar-ireland/api",
+    baseURL: "https://stanceraymond.pythonanywhere.com/solar-ireland/api",
+    // baseURL: "http://localhost:8000/solar-ireland/api",
     timeout: 30000,
     withCredentials: true,
     headers: {

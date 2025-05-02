@@ -107,7 +107,7 @@ const submitForm = async () => {
             return;
         }
         loading.value = true;
-        const response = await axiosInstance.post('http://localhost:8000/solar-ireland/api/client', formData.value);
+        const response = await axiosInstance.post('/client', formData.value);
         console.log('Form submitted successfully:', response.data);
         $toast.success('Form submitted successfully! Please check your email for a response.');
         formData.value = {

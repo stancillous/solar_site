@@ -32,7 +32,7 @@ const articles = ref([]);
 
 const getArticles = async() => {
     try {
-        const response = await axiosInstance.get('http://localhost:8000/solar-ireland/api/blogs');
+        const response = await axiosInstance.get('/blogs');
         articles.value = response.data;
     } catch (error) {
         console.error('Error fetching articles:', error);
