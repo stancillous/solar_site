@@ -10,9 +10,9 @@
             <p class="lead fs-6 text- fw-bold mb-4 mx-auto" style="max-width: 800px;">
              Ready to lower your electricity bills and make your home more energy-efficient? Fill out a short form and we’ll connect you with top-rated, pre-vetted solar installers in your area. It’s fast, free, and there’s absolutely no obligation — just real quotes from real pros who care about quality and savings.
             </p>
-            <a href="/get-quote">
+            <NuxtLink to="/get-quote">
               <button class="btn btn-sm btn-primary btn-lg px-4 ">Get a Free Estimate</button>
-            </a>
+            </NuxtLink>
 
           </div>
         </div>
@@ -59,9 +59,9 @@
         </div>
 
         <div class="text-center mt-5">
-           <a href="/get-quote">
+           <NuxtLink to="/get-quote">
             <button class="btn btn-sm btn-primary btn-lg px-4 mb-5">Get a Free Estimate</button>
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -142,8 +142,16 @@
     <section class="py-5">
       <div class="container">
         <div class="row align-items-center">
+          
+          <!-- Right Column with Form -->
+          <div class="col-md-6 w-10 mt-4 mt-lg-0">
+            <div class="bg-light p-4 rounded">
+              <GetQuoteForm/>
+            </div>
+          </div>
+          
           <!-- Left Column with Title and Steps -->
-          <div class="col-lg-6 pe-lg-5">
+          <div class="col-md-6 ps-lg-5 ">
             <h2 class="mt-2 mb-4">Your home energy, customized</h2>
             
             <div class="position-relative ps-4 mt-5">
@@ -161,47 +169,6 @@
             </div>
           </div>
 
-          <!-- Right Column with Form -->
-          <div class="col-lg-5 offset-lg-1 mt-4 mt-lg-0">
-            <div class="bg-light p-4 rounded">
-              <form @submit.prevent="submitForm" class="needs-validation" novalidate>
-                <div class="mb-3">
-                  <label for="fullName" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="fullName" v-model="formData.fullName" required>
-                </div>
-
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" v-model="formData.email" required>
-                </div>
-
-                <div class="row mb-3">
-                  <div class="">
-                    <label for="phone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="phone" v-model="formData.phone" required>
-                  </div>
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label d-block">Do you own your own home?</label>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="ownYes" value="yes" v-model="formData.ownsHome">
-                    <label class="form-check-label" for="ownYes">Yes</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="ownNo" value="no" v-model="formData.ownsHome">
-                    <label class="form-check-label" for="ownNo">No</label>
-                  </div>
-                </div>
-
-                <!-- <div class="form-text mb-3">
-                  By clicking below, I authorize Cascade to call me via recorded message, text message, and/or push notification. I understand these calls may be generated using an automated technology and that consent is not required to make a purchase. You can opt out anytime. You can agree to our Terms of Service.
-                </div> -->
-
-                <button type="submit" class="btn btn-primary w-100">Start your quote</button>
-              </form>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -286,9 +253,9 @@
         </div>
   
         <div class="text-center mt-5">
-          <a href="/get-quote">
+          <NuxtLink to="/get-quote">
             <button class="btn btn-sm btn-primary btn-lg px-4">Get Started Today</button>
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -355,21 +322,7 @@
       <!-- Articles Section -->
       <section class="py-5">
         <div class="container">
-          <div class="row g-4">
-            <div v-for="(article, index) in articles" :key="index" class="col-md-6 col-lg-3">
-              <div class="article-card">
-                <div class="article-content  p-2" 
-                     :style="{ backgroundImage: `url(${article.image})` }">
-                  <a href="" class="text-dark text-decoration-none">
-                    <div class="article-text d-flex align-items-end bg-white p-3 ">
-                      <h5 class="card-title text-dark mb-0">{{ article.title }}</h5>
-                      <i class="bi bi-arrow-right"></i>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Articles />
         </div>
       </section>
   </div>
@@ -380,6 +333,8 @@
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
+import GetQuoteForm from '@/components/GetQuoteForm.vue';
+import Articles from '@/components/Articles.vue';
 
 const route = useRoute();
 const county = computed(() => {
@@ -467,24 +422,7 @@ const nextTestimonial = () => {
   currentTestimonialIndex.value = (currentTestimonialIndex.value + 1) % testimonials.length;
 };
 
-const articles = [
-  {
-    title: 'What Size Solar System Do I Need for My Home?',
-    image: 'https://www.nrdc.org/sites/default/files/styles/medium_16x9_100/public/2024-05/solar101_GettyImages-1225595093.jpg.webp?h=44e2402b&itok=gB5spH0L'
-  },
-  {
-    title: 'What is the Best Solar Panel for My Roof?',
-    image: 'https://www.nrdc.org/sites/default/files/styles/medium_100/public/2024-05/solar101_AP19226683410036.jpg.webp'
-  },
-  {
-    title: '5 Things to Know Before Installing Solar Panels on Your Home',
-    image: 'https://www.nrdc.org/sites/default/files/styles/medium_2x3_100/public/2024-05/solar101_GettyImages-1882736475.jpg.webp?h=32a026d6&itok=M_-fF72q'
-  },
-  {
-    title: 'How Long Do Solar Panels Last? (+Maintenance Tips)',
-    image: 'https://www.nrdc.org/sites/default/files/styles/medium_100/public/2024-05/solar101_AP24074717661046.jpg.webp?itok=bneyqLkN'
-  }
-];
+
 
 const faqs = [
   {
@@ -555,24 +493,6 @@ const faqs = [
   transition: opacity 0.3s ease;
 }
 
-.article-card {
-  height: 100%;
-}
-
-.article-content {
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: flex-end;
-}
-
-
-.article-text {
-  width: calc(100% - 30px);
-  margin-bottom: 15px;
-}
 
 button{
   border-radius: 1px !important;

@@ -3,7 +3,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3" style="border-bottom: 1px solid #e5e5e5">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-4" href="/">Solar Ireland</a>
+        <NuxtLink class="navbar-brand fw-bold fs-4" to="/">Solar Ireland</NuxtLink>
         <button class="navbar-toggler border-0" type="button" @click="toggleNav">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -12,18 +12,18 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav align-items-center d-none d-lg-flex">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
+              <NuxtLink class="nav-link" to="/">Home</NuxtLink>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="mobile-nav-link" href="/solar-calculator">Solar Calculator</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="/solar-installers">For Suppliers</a>
+              <NuxtLink class="nav-link" to="/solar-installers">For Suppliers</NuxtLink>
             </li>
             <li class="nav-item ms-3">
-              <a href="/get-quote">
-                <button class="btn btn-sm btn-primary px-4" href="#">Get a Free Estimate</button>
-              </a>
+              <NuxtLink to="/get-quote">
+                <button class="btn btn-sm btn-primary px-4">Get a Free Estimate</button>
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -31,23 +31,23 @@
         <!-- Mobile Navigation -->
         <div class="mobile-nav" :class="{ 'active': isNavOpen }">
           <div class="mobile-nav-header p-3 d-flex justify-content-between align-items-center">
-            <a class="navbar-brand fw-bold fs-4" href="/">Solar Ireland</a>
+            <NuxtLink class="navbar-brand fw-bold fs-4" to="/">Solar Ireland</NuxtLink>
             <button class="btn-close" @click="toggleNav"></button>
           </div>
           <ul class="list-unstyled p-3">
             <li class="mb-3">
-              <a class="mobile-nav-link" href="/">Home</a>
+              <NuxtLink class="mobile-nav-link" to="/">Home</NuxtLink>
             </li>
-            <li class="mb-3">
+            <!-- <li class="mb-3">
               <a class="mobile-nav-link" href="/solar-calculator">Solar Calculator</a>
-            </li>
+            </li> -->
             <li class="mb-3">
-              <a class="mobile-nav-link" href="/solar-installers">For Suppliers</a>
+              <NuxtLink class="mobile-nav-link" to="/solar-installers">For Suppliers</NuxtLink>
             </li>
             <li class="mt-4">
-              <a href="/get-quote">
+              <NuxtLink to="/get-quote">
                 <button class="btn btn-sm btn-primary px-4 w-100" href="#">Get a Free Estimate</button>
-              </a>
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -71,10 +71,10 @@
           <div class="col-lg-2">
             <h6 class="fw-bold mb-3">Quick Links</h6>
             <ul class="list-unstyled mb-0">
-              <li class="mb-2"><a href="/" class="text-decoration-none text-muted">Home</a></li>
-              <li class="mb-2"><a href="/solar-calculator" class="text-decoration-none text-muted">Solar Calculator</a></li>
-              <li class="mb-2"><a href="/solar-installers" class="text-decoration-none text-muted">For Suppliers</a></li>
-              <li class="mb-2"><a href="get-quote" class="text-decoration-none text-muted">Get a Quote</a></li>
+              <li class="mb-2"><NuxtLink to="/" class="text-decoration-none text-muted">Home</NuxtLink></li>
+              <!-- <li class="mb-2"><a href="/solar-calculator" class="text-decoration-none text-muted">Solar Calculator</a></li> -->
+              <li class="mb-2"><NuxtLink to="/solar-installers" class="text-decoration-none text-muted">For Suppliers</NuxtLink></li>
+              <li class="mb-2"><NuxtLink to="/get-quote" class="text-decoration-none text-muted">Get a Quote</NuxtLink></li>
             </ul>
           </div>
           <div class="col-lg-3">
