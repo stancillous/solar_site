@@ -175,7 +175,7 @@
 
     <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-2">Why Choose Us</h2>
+        <h2 class="text-center mb-2">Why choose us</h2>
         <p class="text-center text-muted mb-5">We make going solar simple, affordable, and hassle-free</p>
   
         <div class="row g-4">
@@ -263,7 +263,7 @@
     
     <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-2">We Cover All Counties</h2>
+        <h2 class="text-center mb-2">We cover all counties</h2>
         <p class="text-center text-muted mb-5">We have trusted Solar PV Installers in your county. Click on any county to get started.</p>
         
         <div class="row justify-content-center g-3">
@@ -286,7 +286,7 @@
       <section class="py-5">
         <div class="container">
           <div style="max-width: 400px">
-            <h2  class=" mt-2 mb-4 ">Easy Process. Happy Customers.</h2>
+            <h2  class=" mt-2 mb-4 ">Easy process. Happy customers.</h2>
           </div>
           
           <div class="bg-light rounded-3 p-5 position-relative">
